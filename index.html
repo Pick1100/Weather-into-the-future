@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<!--local stylesheets-->
+    <link rel='stylesheet' href= 'assets/css/reset.css'/>
+    <link rel='stylesheet' href= 'assets/css/style.css'/>
+<!--external library and fonts-->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700&display=swap' rel='stylesheet'/>
+    <title>Weather Into The Future</title>
+</head >
+<!-- aside is for selection of city, main is for selection forecast.-->
 <body>
-    
+    <div class='test'>
+    </div>
+    <!-- <aside>
+        <div class = 'asideLocation'>
+            <textarea>
+                    <input type='text' class='location-input' placeholder='Location'>
+            </textarea>
+            <button class='btn btn-primary' type='button'>
+        </div>
+        <div class = 'popularLocations'>
+            <div id="openweathermap-widget-24"></div>
+            Current and with picture
+            <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+                window.myWidgetParam.push({id: 24,cityid: '2643743',appid: 'bcef8eb900037803ff40ff7ef6270182',units: 'metric',containerid: 'openweathermap-widget-24',  });
+                (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(script, s);
+                })();
+            </script>
+        </div>
+    </aside>
+    <main>
+        <div class = 'currentCity'>
+            <div class = 'forecastCard' id='CCC' >
+                multi-day forecast and current
+                <div id="openweathermap-widget-21"></div>
+                    <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+                    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 21,cityid: '2643743',appid: 'bcef8eb900037803ff40ff7ef6270182',units: 'metric',containerid: 'openweathermap-widget-21',  });
+                    (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);
+                    })();</script>
+            </div>
+
+        </div>
+        <div class = 'fiveDayForecast'>
+            <div class ='forecastCard' id='1'> </div>
+            <div class ='forecastCard' id='2'> </div>
+            <div class ='forecastCard' id='3'> </div>
+            <div class ='forecastCard' id='4'> </div>
+            <div class ='forecastCard' id='5'> </div>
+
+        </div>
+    </main> -->
+    <footer>
+        <div class = 'footer'>
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                  <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+              
+                  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+              
+                  <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.6.1.js' integrity='sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous'></script>
+    <script src='./assets/scripts/script.js'></script>
 </body>
 </html>
