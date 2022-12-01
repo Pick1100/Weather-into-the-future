@@ -17,35 +17,34 @@
 </head >
 <!-- aside is for selection of city, main is for selection forecast.-->
 <body>
-    <div class='test'>
+    <div id='test'>
     </div>
-    <!-- <aside>
+    <aside>
         <div class = 'asideLocation'>
-            <textarea>
-                    <input type='text' class='location-input' placeholder='Location'>
-            </textarea>
-            <button class='btn btn-primary' type='button'>
+             <input type='text' class='location-input' placeholder='Location' id='cityInput'>
+            <button class='btn btn-primary' type='button' id='cityButton'> Search </button>
         </div>
         <div class = 'popularLocations'>
             <div id="openweathermap-widget-24"></div>
-            Current and with picture
-            <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
-                window.myWidgetParam.push({id: 24,cityid: '2643743',appid: 'bcef8eb900037803ff40ff7ef6270182',units: 'metric',containerid: 'openweathermap-widget-24',  });
-                (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(script, s);
-                })();
-            </script>
         </div>
     </aside>
     <main>
         <div class = 'currentCity'>
-            <div class = 'forecastCard' id='CCC' >
+            <div class = 'forecastCard' id='current' >
+                <div id="currentTemp">
+
+                </div>
+                <div id="currentWeather">
+
+                </div>
+                <div id="currentWind">
+
+                </div>
+                <div id="currentHumidity">
+
+                </div>
                 multi-day forecast and current
-                <div id="openweathermap-widget-21"></div>
-                    <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
-                    <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 21,cityid: '2643743',appid: 'bcef8eb900037803ff40ff7ef6270182',units: 'metric',containerid: 'openweathermap-widget-21',  });
-                    (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);
-                    })();</script>
+               
             </div>
 
         </div>
@@ -57,7 +56,7 @@
             <div class ='forecastCard' id='5'> </div>
 
         </div>
-    </main> -->
+    </main>
     <footer>
         <div class = 'footer'>
             <div class="container">
